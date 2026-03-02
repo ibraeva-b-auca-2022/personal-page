@@ -4,7 +4,7 @@
 }
 
 body {
-    background: url("https://cdn.imgchest.com/files/wye3cdbko4b.png"); 
+    /* background: url("https://cdn.imgchest.com/files/wye3cdbko4b.png");  */
     opacity: .5;
     background-repeat: no-repeat;
 }
@@ -26,6 +26,8 @@ body {
     min-inline-size: 0;
     height: 200px;
 }
+
+/* clamp (*, *, *)    */
 
 .box1 {
     flex-basis: 18.5%;
