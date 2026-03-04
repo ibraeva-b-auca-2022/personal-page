@@ -80,12 +80,13 @@ ul {
     list-style: none;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap : 0.5rem;
 }
 
 ul > * {
-    padding: 0;
+    padding: 0.5rem;
     background: lightpink;
 }
 
