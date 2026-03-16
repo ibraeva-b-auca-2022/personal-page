@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women.kg | Safe Space for AUCA Women</title>
+  <meta name="description" content="A dedicated platform for female students to connect, share resources, find roommates, and support each other in a secure environment.">
+  
+  <!-- Plus Jakarta Sans Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Material Symbols for Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Navigation & Auth Placeholder -->
+  <header class="navbar">
+    <div class="nav-container container">
+      <div class="logo">
+        Women<span class="accent">.kg</span>
+      </div>
+      <button class="mobile-menu-toggle" aria-label="Toggle Navigation">
+        <span class="material-symbols-rounded">menu</span>
+      </button>
+      <nav class="nav-links">
+        <a href="#community">Community</a>
+        <a href="#roommates">Roommates</a>
+        <a href="#volunteer">Volunteer</a>
+        <a href="#clubs">Clubs</a>
+        <a href="#marketplace">Marketplace</a>
+        <!-- Auth Placeholder -->
+        <div class="auth-group">
+          <button class="btn btn-secondary sm" onclick="alert('Login Modal Triggered (Placeholder)')">Log In</button>
+          <button class="btn btn-primary sm" onclick="alert('Registration Modal Triggered (Placeholder)')">Join Us</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="badge">By Students, For Students</div>
+        <h1>Safe Space for <br><span class="gradient-text">AUCA Women</span></h1>
+        <p>A dedicated platform for female students to connect, share resources, find roommates, and support each other in a secure, vibrant environment.</p>
+        <div class="hero-actions">
+          <a href="#community" class="btn btn-primary">Join the Community</a>
+          <a href="#marketplace" class="btn btn-secondary">Explore Safe Exchange</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Board (User-Generated Content Placeholder) -->
+  <section id="community" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2>Community Board</h2>
+          <p class="subtitle">Latest discussions and user-generated posts.</p>
+        </div>
+        <!-- UGC Post Action -->
+        <button class="btn btn-primary" onclick="alert('Create Post Modal Triggered (Placeholder)')">
+          <span class="material-symbols-rounded">edit_square</span> Write a Post
+        </button>
+      </div>
+      
+      <!-- UGC Grid -->
+      <div class="grid items-3">
+        <!-- Post 1 -->
+        <article class="card feed-card">
+          <div class="card-meta">
+            <div class="avatar icon-bg"><span class="material-symbols-rounded">person</span></div>
+            <div class="meta-info">
+              <h4>Anonymous Member</h4>
+              <span>2 hours ago</span>
+            </div>
+          </div>
+          <h3>Advice for Senior Thesis?</h3>
+          <p>Looking for mentors who recently graduated from the Psychology department. I am trying to figure out if...</p>
+          <div class="card-footer">
+            <button class="action-btn" onclick="alert('Expand Comments Section (Placeholder)')">
+              <span class="material-symbols-rounded">chat_bubble</span> 12
+            </button>
+            <button class="action-btn">
+              <span class="material-symbols-rounded">favorite</span> 4
+            </button>
+          </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="card feed-card highlight">
+          <div class="card-meta">
+            <div class="avatar img-avatar">A</div>
+            <div class="meta-info">
+              <h4>Aybike T.</h4>
+              <span>5 hours ago</span>
+            </div>
+          </div>
+          <h3>Safety Tips for Late Nights</h3>
+          <p>Compiled a list of trusted taxi numbers and safety apps for our community. Please save these directly to your phone!</p>
+          <div class="card-footer">
+            <button class="action-btn" onclick="alert('Expand Comments Section (Placeholder)')">
+              <span class="material-symbols-rounded">chat_bubble</span> 28
+            </button>
+            <button class="action-btn active">
+              <span class="material-symbols-rounded">favorite</span> 56
+            </button>
+          </div>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="card feed-card">
+          <div class="card-meta">
+            <div class="avatar icon-bg"><span class="material-symbols-rounded">person</span></div>
+            <div class="meta-info">
+              <h4>Anonymous Member</h4>
+              <span>8 hours ago</span>
+            </div>
+          </div>
+          <h3>Lost keys in C-Wing</h3>
+          <p>Found a set of keys with a purple keychain near the cafeteria. I left them at the security desk by the main entrance.</p>
+          <div class="card-footer">
+            <button class="action-btn" onclick="alert('Expand Comments Section (Placeholder)')">
+              <span class="material-symbols-rounded">chat_bubble</span> 2
+            </button>
+            <button class="action-btn">
+              <span class="material-symbols-rounded">favorite</span> 8
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roommate Finder -->
+  <section id="roommates" class="section alt-bg">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2>Roommate Finder</h2>
+          <p class="subtitle">Looking for a roommate or have a room available?</p>
+        </div>
+        <button class="btn btn-secondary sm" onclick="alert('Post Room/Roommate Listing Form (Placeholder)')">
+          <span class="material-symbols-rounded">add</span> Post a Listing
+        </button>
+      </div>
+      
+      <div class="grid items-3">
+        <div class="card item-card">
+          <div class="card-media price-tag" data-price="$250/mo">
+             <div class="media-placeholder gradient-1"></div>
+          </div>
+          <div class="card-body">
+            <h3>Cozy Studio</h3>
+            <p class="location"><span class="material-symbols-rounded">location_on</span> 5 min walk from AUCA</p>
+          </div>
+        </div>
+
+        <div class="card item-card">
+          <div class="card-media price-tag" data-price="$180/mo">
+             <div class="media-placeholder gradient-2"></div>
+          </div>
+          <div class="card-body">
+            <h3>2BR Shared Apt</h3>
+            <p class="location"><span class="material-symbols-rounded">location_on</span> Ala-Too District</p>
+          </div>
+        </div>
+
+        <div class="card item-card">
+          <div class="card-media price-tag" data-price="$200/mo">
+             <div class="media-placeholder gradient-3"></div>
+          </div>
+          <div class="card-body">
+            <h3>Private Bedroom</h3>
+            <p class="location"><span class="material-symbols-rounded">location_on</span> City Center</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volunteer & Events Hub -->
+  <section id="volunteer" class="section">
+    <div class="container split-grid">
+      <div class="events-col">
+        <div class="section-header">
+          <h2>Events Hub</h2>
+        </div>
+        <div class="event-list">
+          <div class="card event-row">
+            <div class="event-date">
+              <span class="month">OCT</span>
+              <span class="day">12</span>
+            </div>
+            <div class="event-details">
+              <h3>Women in Tech Workshop</h3>
+              <p>Learn basics of web development with industry leaders.</p>
+            </div>
+            <div class="event-action">
+              <button class="btn btn-secondary sm">RSVP</button>
+            </div>
+          </div>
+  
+          <div class="card event-row">
+            <div class="event-date">
+              <span class="month">NOV</span>
+              <span class="day">05</span>
+            </div>
+            <div class="event-details">
+              <h3>Campus Clean-up Drive</h3>
+              <p>Giving back to our university. Supplies provided.</p>
+            </div>
+            <div class="event-action">
+              <button class="btn btn-secondary sm">RSVP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social API Integrations Placeholder -->
+      <div class="api-col">
+        <div class="section-header">
+          <h2>Live Feeds</h2>
+        </div>
+        <div class="card api-feed-card">
+          <div class="api-header">
+            <span class="material-symbols-rounded" style="color: #E1306C;">photo_camera</span>
+            <h4>Instagram API Placeholder</h4>
+          </div>
+          <div class="api-content">
+            <p class="small-text">Images injected via IG Basic Display API...</p>
+            <div class="ig-grid">
+              <div class="ig-box"></div>
+              <div class="ig-box"></div>
+              <div class="ig-box"></div>
+              <div class="ig-box"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card api-feed-card mt-1">
+          <div class="api-header">
+            <span class="material-symbols-rounded" style="color: #0088cc;">send</span>
+            <h4>Telegram Channel Fetch</h4>
+          </div>
+          <div class="api-content">
+            <p class="tg-msg"><strong>[Announcements]</strong> Library hours extended for midterms! 📚 #update</p>
+            <p class="tg-msg"><strong>[Campus Life]</strong> Yoga session at 5PM today in the main quad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- University Clubs -->
+  <section id="clubs" class="section alt-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2>University Clubs</h2>
+      </div>
+      <div class="grid items-3">
+        <div class="card club-card">
+          <span class="material-symbols-rounded club-icon">science</span>
+          <h3>Women in STEM</h3>
+          <p>24 active members</p>
+          <button class="btn btn-link">Join Club <span class="material-symbols-rounded">arrow_forward</span></button>
+        </div>
+        <div class="card club-card">
+          <span class="material-symbols-rounded club-icon">palette</span>
+          <h3>Art Collective</h3>
+          <p>18 active members</p>
+          <button class="btn btn-link">Join Club <span class="material-symbols-rounded">arrow_forward</span></button>
+        </div>
+        <div class="card club-card">
+          <span class="material-symbols-rounded club-icon">self_improvement</span>
+          <h3>Yoga & Wellness</h3>
+          <p>32 active members</p>
+          <button class="btn btn-link">Join Club <span class="material-symbols-rounded">arrow_forward</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Safe Exchange Space -->
+  <section id="marketplace" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2>Buy Nothing Space</h2>
+          <p class="subtitle">Give away or trade campus essentials in our Safe Exchange.</p>
+        </div>
+      </div>
+      <div class="grid items-4">
+        <div class="card product-card">
+           <div class="product-icon"><span class="material-symbols-rounded">menu_book</span></div>
+           <h4>Intro to Econ Textbooks</h4>
+           <span class="tag">Free</span>
+        </div>
+        <div class="card product-card">
+           <div class="product-icon"><span class="material-symbols-rounded">coffee_maker</span></div>
+           <h4>Electric Kettle</h4>
+           <span class="tag">Trade</span>
+        </div>
+        <div class="card product-card">
+           <div class="product-icon"><span class="material-symbols-rounded">light</span></div>
+           <h4>Desk Lamp</h4>
+           <span class="tag">Free</span>
+        </div>
+        <div class="card product-card">
+           <div class="product-icon"><span class="material-symbols-rounded">local_florist</span></div>
+           <h4>Succulent Plants</h4>
+           <span class="tag">Free</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Anonymous Questions (Forms Demo) -->
+  <section id="questions" class="section alt-bg">
+    <div class="container split-grid">
+      <div class="split-content">
+        <h2>Have a Question?</h2>
+        <p>Ask anonymously and get answers from our community experts. No judgment, just support. </p>
+        <div class="highlight-box">
+          <span class="material-symbols-rounded">shield_lock</span>
+          <p>Your identity remains completely hidden from others via encrypted routing in the backend.</p>
+        </div>
+      </div>
+      <div class="split-form form-card">
+        <form id="anonymousForm" onsubmit="event.preventDefault(); alert('Message Submitted Automatically (Placeholder)');">
+          <div class="form-group">
+            <label for="category">Category</label>
+            <select id="category" class="form-control">
+              <option>Academics</option>
+              <option>Personal Life</option>
+              <option>Mental Health</option>
+              <option>Career Advice</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="question">Your Question</label>
+            <textarea id="question" class="form-control" rows="4" placeholder="Type your question safely here..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">Submit Anonymously</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="logo">Women<span class="accent">.kg</span></div>
+        <p>© 2024 AUCA Women's Community. By students, for students.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Responsive Mobile Menu Script
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      const icon = menuToggle.querySelector('span');
+      if(navLinks.classList.contains('active')) {
+        icon.textContent = 'close';
+      } else {
+        icon.textContent = 'menu';
+      }
+    });
+
+    // Close menu when a standard nav link is clicked
+    document.querySelectorAll('.nav-links a:not(.btn)').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        menuToggle.querySelector('span').textContent = 'menu';
+      });
+    });
+  </script>
+</body>
+</html>
