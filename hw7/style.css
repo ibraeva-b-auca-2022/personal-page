@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://cdn.imgchest.com/files/345xc9jbw7w.png);
+    background-repeat: no-repeat;
+    max-width: 1143px;
+    min-height: 1583px;
+    font-size: 2rem;
+    opacity: .5;
+    color: blue;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 750px 270px;
+    grid-template-rows: 200px 50px 56px 38px 75px 120px 240px 70px 439px;
+    grid-template-areas: "first first"
+                        "second second"
+                        "third third"
+                        "fourth fourth"
+                        "fifth fifth"
+                        "sixth tenth"
+                        "seventh tenth"
+                        "eighth tenth"
+                        "ninth eleventh";
+}
+
+.container > * {
+    border: 2px dashed blue;
+}
+
+.box1 {
+    grid-area: first;
+}
+
+.box2 {
+    grid-area: second;
+}
+
+.box3 {
+    grid-area: third;
+}
+
+.box4 {
+    grid-area: fourth;
+}
+
+.box5 {
+    grid-area: fifth;
+}
+
+.box6 {
+    grid-area: sixth;
+}
+
+.box7 {
+    grid-area: seventh;
+}
+
+.box8 {
+    grid-area: eighth;
+}
+
+.box9 {
+    grid-area: ninth;
+}
+
+.box10 {
+    grid-area: tenth;
+}
+
+.box11 {
+    grid-area: eleventh;
+}
