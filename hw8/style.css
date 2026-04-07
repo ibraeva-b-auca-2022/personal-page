@@ -4,12 +4,12 @@
 }
 
 body {
-    background-image: url(https://cdn.imgchest.com/files/345xc9jbw7w.png);
+    /* background-image: url(https://cdn.imgchest.com/files/345xc9jbw7w.png); */
     background-repeat: no-repeat;
     max-width: 1025px;
     min-height: 1583px;
     font-size: 2rem;
-    opacity: .5;
+    /* opacity: .5; */
     color: blue;
 }
 
