@@ -155,9 +155,12 @@ body {
     .buttonMenu {
         display: block;
         position: fixed;
+        background: none;
+        border: none;
         top: 10px;
         right: 10px;
         z-index: 1000;
+        font-size: 40px;
     }
   
     .box3 {
