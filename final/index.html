@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+    <button onclick="toggleTheme()" class="switch-style-btn">Switch Style</button>
     <button class="buttonMenu"><i class="fa fa-bars"></i></button>
     <div class="container">
       <!-- <img src='https://cdn.imgchest.com/files/pyvdcdqz5yk.png' style='position: absolute; top:0; left:0;z-index:-1; opacity: 0.4'> -->
@@ -177,6 +178,16 @@
         button.addEventListener("click", () => {
           menu.classList.toggle("mobileMenu");
         });
-      </script>
+    </script>
+    <script>
+      function toggleTheme() {
+          var theme = document.getElementsByTagName('link')[0];
+          if (theme.getAttribute('href') == 'style.css') {
+              theme.setAttribute('href', 'style2.css');
+          } else {
+              theme.setAttribute('href', 'style.css');
+          }
+      }
+    </script>
   </body>
 </html>

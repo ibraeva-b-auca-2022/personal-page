@@ -43,6 +43,22 @@ body {
     gap: 20px;
 }
 
+.switch-style-btn{
+    position:fixed;
+    top:10px;
+    left:10px;
+    z-index:9999;
+    height:38px;
+    padding:0 16px;
+    border:none;
+    border-radius:10px;
+    background: var(--bg-green);
+    color: var(--text-accent);
+    font-size:14px;
+    cursor:pointer;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+}
+
 /* Box 1: Banner */
 .box1 {
     grid-column: span 12;
@@ -524,14 +540,14 @@ body {
     .box3 {
         display: none; /* Mobile menu logic toggled via JS in HTML template */
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        top: 120px;
+        left: 20px;
+        right: 20px;
+        width: 90%;
         z-index: 999;
         flex-direction: column;
         justify-content: center;
-        background: #fff;
+        background: var(--bg-red);
     }
 
     .box3.mobileMenu {

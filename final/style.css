@@ -39,6 +39,21 @@ body {
         "ninth eleventh";
 }
 
+.switch-style-btn{
+    position:fixed;
+    top:10px;
+    left:10px;
+    z-index:9999;
+    height:38px;
+    padding:0 16px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-size:14px;
+    cursor:pointer;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+}
 
 /* Box1 */
 
