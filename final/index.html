@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 9</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <button class="buttonMenu"><i class="fa fa-bars"></i></button>
+    <div class="container">
+      <!-- <img src='https://cdn.imgchest.com/files/pyvdcdqz5yk.png' style='position: absolute; top:0; left:0;z-index:-1; opacity: 0.4'> -->
+      <div class="box1">    
+        <img src="images/demirbank-banner.png" alt="DemirBank Banner">
+      </div>
+      <div class="box2">
+        <div class="service-left">
+          <a href="#" class="service-logo bazar-logo">
+              <img src="images/bazar_kg-logo.jpg" alt="bazar.kg" class="bazar-icon">
+          </a>
+          <div class="divider"></div>
+          <a href="#" class="service-logo mashina-logo">
+              <img src="images/mashina.kg-logo.png" alt="mashina.kg" class="mashina-icon">
+          </a>
+        </div>
+        <div class="service-right">
+            <a href="#" class="language">
+                <img src="images/language.png" alt="language" class="language-icon">
+                <span>ENG □</span>
+            </a>
+            <a href="#" class="login">Login</a>
+            <a href="#" class="register">Registration</a>
+            <button class="add-advert">
+              □ To add an advert
+            </button>
+        </div>
+      </div>
+      <div class="box3">
+        <div class="house-logo">
+          <img src="images/house.kg-logo.png" alt="house.kg">
+        </div>
+        <div class="left-side">
+          <ul>
+            <li>Sale</li>
+            <li>Rent</li>
+            <li>□ On the map</li>
+            <li>Real Estate Verification</li>
+            <li>Daily</li>
+            <li>Companies</li>
+            <li>New buildings</li>
+            <li>Analytics</li>
+            <li>Urgently</li>
+          </ul>
+        </div>
+      </div>
+      <div class="box4">
+        <div class="box4-left">
+          Sell and buy real estate in Kyrgyzstan
+        </div>
+        <div class="box4-right">
+          ADVERTISERS
+        </div>
+      </div>
+      <div class="box5">
+        <div class="search-container">
+          <div class="search-select">
+              <span>Buy</span>
+              <span class="arrow">⌄</span>
+          </div>
+          <div class="search-select">
+              <span>Property type</span>
+              <span class="arrow">⌄</span>
+          </div>
+          <div class="search-select">
+              <span>Number of rooms</span>
+              <span class="arrow">⌄</span>
+          </div>
+          <input type="text" placeholder="I'm looking for...">
+          <button class="map-button">
+              <img src="images/map-icon.png" alt="">
+              <span>To show on the map</span>
+          </button>
+          <button class="find-button">
+              <img src="images/find-icon.png" alt="">
+              <span>Find</span>
+          </button>
+        </div>
+      </div>
+      <div class="box6">6</div>
+      <div class="box7">7</div>
+      <div class="box8">8</div>
+      <div class="box9">9</div>
+      <div class="box10">10</div>
+      <div class="box11">11</div>
+    </div>
+    <script>
+        const button = document.querySelector(".buttonMenu");
+        const menu = document.querySelector(".box3");
+      
+        button.addEventListener("click", () => {
+          menu.classList.toggle("mobileMenu");
+        });
+      </script>
+  </body>
+</html>
