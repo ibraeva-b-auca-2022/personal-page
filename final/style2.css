@@ -1,0 +1,585 @@
+/* style2.css - Modern Light Theme for House.kg */
+/* Inspired by Airbnb and Scandinavian minimalism */
+
+:root {
+    --bg-page: #f7f7f7;
+    --bg-card: #ffffff;
+    --bg-red: #FF0000;
+    --bg-green: #31C200;
+    --accent-blue: #006ce4;
+    --accent-light-blue: #e7f3ff;
+    --text-main: #222222;
+    --text-muted: #717171;
+    --text-accent: #ffffff;
+    --border-soft: #dddddd;
+    --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --radius-lg: 18px;
+    --radius-md: 12px;
+    --transition: all 0.25s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Layout Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+/* Box 1: Banner */
+.box1 {
+    grid-column: span 12;
+}
+
+.box1 img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    display: block;
+    box-shadow: var(--shadow-soft);
+}
+
+/* Box 2: Top Service Bar */
+.box2 {
+    grid-column: span 12;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.service-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.service-logo img {
+    height: 24px;
+    transition: var(--transition);
+}
+
+.service-logo:hover img {
+    opacity: 0.7;
+}
+
+.divider {
+    width: 1px;
+    height: 15px;
+    background: var(--border-soft);
+}
+
+.service-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.service-right a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.language img {
+    width: 18px;
+}
+
+.add-advert {
+    background-color: var(--bg-green);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.add-advert:hover {
+    background-color: var(--bg-green);
+    transform: translateY(-1px);
+}
+
+/* Box 3: Navigation Bar */
+.box3 {
+    grid-column: span 12;
+    background: var(--bg-red);
+    border-radius: var(--radius-lg);
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    box-shadow: var(--shadow-soft);
+}
+
+.house-logo img {
+    height: 40px;
+}
+
+.left-side ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.left-side ul li {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-accent); 
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.left-side ul li:hover {
+    color: var(--accent-blue);
+}
+
+/* Box 4: Header Text */
+.box4 {
+    grid-column: span 12;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+.box4-left {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+}
+
+.box4-right {
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+}
+
+/* Box 5: Search Container */
+.box5 {
+    grid-column: span 12;
+    background: var(--bg-card);
+    padding: 20px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+    margin-top: -5px;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+}
+
+.search-group {
+    flex: 1;
+    display: flex;
+    border: 1px solid var(--border-soft);
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.search-select {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    border-right: 1px solid var(--border-soft);
+    font-size: 14px;
+    background: #fff;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.search-select.active {
+    font-weight: 600;
+    color: var(--bg-green);
+}
+
+.search-select img {
+    width: 10px;
+}
+
+.search-group input {
+    border: none;
+    padding: 10px 15px;
+    flex: 1;
+    outline: none;
+    font-size: 15px;
+}
+
+.map-button, .find-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 20px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.map-button {
+    background: #fff;
+    border: 1px solid var(--border-soft);
+    color: var(--text-main);
+}
+
+.map-button:hover {
+    background: #f0f0f0;
+}
+
+.find-button {
+    background: var(--bg-green);
+    color: white;
+}
+
+.find-button:hover {
+    background: #004da3;
+}
+
+/* Box 6: Center Ad */
+.box6 {
+    grid-column: span 12;
+}
+
+.box6 img {
+    width: 100%;
+    border-radius: var(--radius-md);
+    display: block;
+}
+
+/* Box 7: Companies Section */
+.box7 {
+    grid-column: span 12;
+    margin-top: 10px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.section-header a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.companies-slider {
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+    position: relative;
+    padding: 5px 0;
+}
+
+.company-card {
+    background: var(--bg-card);
+    padding: 20px;
+    border-radius: var(--radius-md);
+    text-align: center;
+    flex: 1;
+    border: 1px solid var(--border-soft);
+    transition: var(--transition);
+    box-shadow: var(--shadow-soft);
+}
+
+.company-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--accent-blue);
+}
+
+.company-card img {
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.company-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.company-card p {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.slider-arrow {
+    background: #fff;
+    border: 1px solid var(--border-soft);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    align-self: center;
+}
+
+.slider-arrow:hover {
+    background: var(--accent-blue);
+    color: white;
+}
+
+/* Box 8: Business Buttons */
+.box8 {
+    grid-column: span 12;
+    display: flex;
+    gap: 15px;
+}
+
+.box8 button {
+    flex: 1;
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid var(--border-soft);
+    background: var(--bg-card);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow-soft);
+}
+
+.box8 button:hover {
+    background: var(--accent-light-blue);
+    color: var(--accent-blue);
+    border-color: var(--accent-blue);
+}
+
+.box8 button.call {
+    background: var(--accent-light-blue);
+    color: var(--accent-blue);
+    border: none;
+}
+
+.box8 button.call:hover {
+    background: var(--accent-blue);
+    color: white;
+}
+
+/* Box 9: Property Grid */
+.box9 {
+    grid-column: span 9;
+    margin-top: 10px;
+}
+
+.property-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.property-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition);
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--accent-blue);
+}
+
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Box 10 & 11: Sidebar Ads */
+.box10 {
+    grid-column: span 3;
+    margin-top: 10px;
+}
+
+.box11 {
+    grid-column: span 3;
+}
+
+.side-bar-ad img {
+    width: 100%;
+    border-radius: var(--radius-md);
+    display: block;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow-soft);
+}
+
+
+/* Mobile Menu Button */
+.buttonMenu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: var(--accent-blue);
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1024px) {
+    .box9 { grid-column: span 8; }
+    .box10, .box11 { grid-column: span 4; }
+    .property-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .container { padding: 15px; }
+    .box3 { flex-direction: column; align-items: stretch; gap: 15px; }
+    .left-side ul { justify-content: center; }
+    .search-container { flex-direction: column; }
+    .search-group { flex-direction: column; }
+    .search-select { border-right: none; border-bottom: 1px solid var(--border-soft); }
+    
+    .box9 { grid-column: span 12; }
+    .box10, .box11 { grid-column: span 12; }
+    
+    .box4-left { font-size: 22px; }
+}
+
+@media (max-width: 500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    [class^="box"] {
+        grid-column: auto !important;
+    }
+
+    .service-left, .service-right {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    .box2 {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .buttonMenu {
+        display: flex;
+    }
+
+    .box3 {
+        display: none; /* Mobile menu logic toggled via JS in HTML template */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        flex-direction: column;
+        justify-content: center;
+        background: #fff;
+    }
+
+    .box3.mobileMenu {
+        display: flex !important;
+    }
+
+    .left-side ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .left-side ul li {
+        font-size: 18px;
+    }
+
+    .search-container {
+        gap: 15px;
+    }
+
+    .property-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .companies-slider {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company-card {
+        width: 100%;
+    }
+
+    .slider-arrow {
+        display: none;
+    }
+
+    .box8 {
+        flex-direction: column;
+    }
+    
+    .box4 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+}
